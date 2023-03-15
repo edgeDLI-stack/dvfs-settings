@@ -9,23 +9,23 @@ cur_freq=`cat $cpu_dir_path/cur_freq`
 echo $cur_freq
 
 echo "*** Available CPU frequencies:"
-all_freq=`cat $cpu_dir_path/available_frequencies`
+all_freq=`cat $cpu_dir_path/scaling_available_governors`
 echo $all_freq
 
 echo "*** Min frequency:"
-min_freq=`cat $cpu_dir_path/min_freq`
+min_freq=`cat $cpu_dir_path/cpuinfo_min_freq`
 echo $min_freq
 echo "*** Max frequency:"
-max_freq=`cat $cpu_dir_path/max_freq`
+max_freq=`cat $cpu_dir_path/cpuinfo_max_freq`
 echo $max_freq
 
 
 echo "*** Current CPU governor:"
-cur_gov=`cat $cpu_dir_path/governor`
+cur_gov=`cat $cpu_dir_path/scaling_governor`
 echo $cur_gov
 
 echo "*** Available CPU governor:"
-gall=`cat $cpu_dir_path/available_governors`
+gall=`cat $cpu_dir_path/scaling_available_governors`
 echo $gall
 
 echo "*** Related CPU idx:"
