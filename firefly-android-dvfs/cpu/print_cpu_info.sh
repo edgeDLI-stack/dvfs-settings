@@ -2,7 +2,7 @@
 
 cpu_idx=$1
 
-cpu_dir_path=/sys/devices/system/cpu/cpu${cpu_idx}/cpufreq/
+cpu_dir_path=/sys/devices/system/cpu/cpu${cpu_idx}/cpufreq
 
 echo "*** Current CPU frequency:"
 cur_freq=`cat $cpu_dir_path/cur_freq`
